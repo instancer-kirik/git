@@ -108,4 +108,7 @@ int report_unmatched_refs(struct ref **sought, int nr_sought);
  */
 int fetch_pack_fsck_objects(void);
 
+int fetch_pack_fsck_config(const char *var, const char *value,
+			   struct strbuf *msg_types);
+
 #endif
